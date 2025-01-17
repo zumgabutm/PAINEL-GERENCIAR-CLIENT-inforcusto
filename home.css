@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #2c003e, #5a2d91, #6a1b9a, #ab47bc, #4e1b6d, #3f0058, #0a0022, #5a2d91);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h2 {
+    margin: 0 0 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #4e1b6d;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 15px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+.table th {
+    background: linear-gradient(to right, #6a1b9a, #ab47bc);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table td {
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+.table tr:hover td {
+    background-color: #444; /* Cor ao passar o mouse */
+}
+
+.ativo {
+    background-color: rgba(76, 175, 80, 0.4); /* Verde claro */
+    color: green;
+    font-weight: bold;
+}
+
+.inativo {
+    background-color: rgba(244, 67, 54, 0.4); /* Vermelho claro */
+    color: red;
+    font-weight: bold;
+}
+
+.perto-vencimento {
+    background-color: rgba(255, 235, 59, 0.4); /* Amarelo claro */
+    color: yellow;
+    font-weight: bold;
+}
+
+button {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4e1b6d;
+}
+
+form {
+    display: inline-block; /* Permite que os formulários fiquem ao lado */
+}
